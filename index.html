@@ -74,8 +74,8 @@
 
     /* ===== LAYOUT ===== */
     .container { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
-    section { padding: 96px 0; }
-    .section-header { margin-bottom: 56px; }
+    section { padding: 72px 0; }
+    .section-header { margin-bottom: 40px; }
     .section-header h2 { margin-bottom: 16px; }
     .section-header p { font-size: 1.1rem; color: var(--text-mid); max-width: 560px; line-height: 1.7; }
 
@@ -283,14 +283,8 @@
       background: radial-gradient(circle, rgba(14,165,233,0.12) 0%, transparent 70%);
       pointer-events: none;
     }
-    /* Blue vertical accent bar */
-    .hero-accent-bar {
-      position: absolute;
-      top: 0; right: 38%;
-      width: 3px;
-      height: 100%;
-      background: linear-gradient(to bottom, transparent, rgba(14,165,233,0.5) 30%, rgba(14,165,233,0.5) 70%, transparent);
-    }
+    /* Blue vertical accent bar — removed */
+    .hero-accent-bar { display: none; }
 
     .hero-content {
       position: relative;
@@ -637,6 +631,7 @@
       padding: 36px 28px;
       border: 1px solid var(--border);
       transition: all 0.25s;
+      text-align: center;
     }
     .why-item:hover { box-shadow: 0 8px 28px rgba(14,165,233,0.08); border-color: rgba(14,165,233,0.2); }
     .why-num {
@@ -654,7 +649,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 18px;
+      margin: 0 auto 18px;
     }
     .why-icon svg { width: 24px; height: 24px; stroke: var(--blue); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
     .why-item h3 { font-size: 1.1rem; margin-bottom: 10px; color: var(--text-dark); }
@@ -1033,7 +1028,7 @@
     <div class="hero-pillars">
       <div class="hero-pillar fade-up">
         <div class="hero-pillar-icon">
-          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/><path d="M8 2l1.5 1.5M16 2l-1.5 1.5"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
         </div>
         <div>
           <div class="hero-pillar-title">Autoservis</div>
@@ -1042,7 +1037,7 @@
       </div>
       <div class="hero-pillar fade-up d1">
         <div class="hero-pillar-icon">
-          <svg viewBox="0 0 24 24"><rect x="1" y="7" width="22" height="12" rx="2"/><path d="M5 7V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v2"/><path d="M9 12h6M9 15h6"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.5-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.3 1L3 10.9"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M3 17H5"/></svg>
         </div>
         <div>
           <div class="hero-pillar-title">Karosárna</div>
@@ -1051,7 +1046,7 @@
       </div>
       <div class="hero-pillar fade-up d2">
         <div class="hero-pillar-icon">
-          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/><path d="M12 8a4 4 0 1 0 4 4 4 4 0 0 0-4-4z"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25z"/><path d="M20.71 7.04a1 1 0 0 0 0-1.41l-2.34-2.34a1 1 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
         </div>
         <div>
           <div class="hero-pillar-title">Lakovna</div>
@@ -1081,7 +1076,7 @@
 
         <div class="service-card fade-up d1">
           <div class="service-icon">
-            <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.5-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.3 1L3 10.9"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M3 17H5"/></svg>
           </div>
           <h3>Karosářské práce</h3>
           <p>Opravy pozinkované karoserie, výměna karosářských dílů, korekce tvarů po nehodách.</p>
@@ -1089,7 +1084,7 @@
 
         <div class="service-card fade-up d2">
           <div class="service-icon">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 1 9.9 10.8"/><path d="M2.1 12.8A10 10 0 0 0 12 22"/><path d="M12 6v6l3 3"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25z"/><path d="M20.71 7.04a1 1 0 0 0 0-1.41l-2.34-2.34a1 1 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
           </div>
           <h3>Lakování vozidel</h3>
           <p>Precizní lakování v lakovacím boxu, míchárna barev Spies Hecker pro přesný odstín.</p>
@@ -1105,7 +1100,7 @@
 
         <div class="service-card fade-up">
           <div class="service-icon">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/></svg>
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="9"/><line x1="12" y1="15" x2="12" y2="22"/><line x1="2" y1="12" x2="9" y2="12"/><line x1="15" y1="12" x2="22" y2="12"/></svg>
           </div>
           <h3>Pneuservis</h3>
           <p>Přezutí, vyvážení, uskladnění pneumatik. Osobní i dodávkové vozy.</p>
@@ -1113,7 +1108,7 @@
 
         <div class="service-card fade-up d1">
           <div class="service-icon">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><line x1="12" y1="3" x2="12" y2="9"/><line x1="12" y1="15" x2="12" y2="21"/><line x1="3" y1="12" x2="9" y2="12"/><line x1="15" y1="12" x2="21" y2="12"/><line x1="5.64" y1="5.64" x2="8.46" y2="8.46"/><line x1="15.54" y1="15.54" x2="18.36" y2="18.36"/><line x1="18.36" y1="5.64" x2="15.54" y2="8.46"/><line x1="8.46" y1="15.54" x2="5.64" y2="18.36"/></svg>
           </div>
           <h3>Brzdové centrum</h3>
           <p>Kontrola, seřízení a výměna brzdových systémů — kotouče, destičky, brzdová kapalina.</p>
@@ -1121,7 +1116,7 @@
 
         <div class="service-card fade-up d2">
           <div class="service-icon">
-            <svg viewBox="0 0 24 24"><path d="M3 17a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-2z"/><path d="M7 17V7a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v10"/><path d="M9 11h6M9 14h6"/></svg>
+            <svg viewBox="0 0 24 24"><rect x="2" y="9" width="20" height="4" rx="1"/><line x1="7" y1="13" x2="7" y2="17"/><line x1="17" y1="13" x2="17" y2="17"/><circle cx="7" cy="19" r="2"/><circle cx="17" cy="19" r="2"/><line x1="4" y1="9" x2="4" y2="6"/><line x1="20" y1="9" x2="20" y2="6"/><line x1="2" y1="6" x2="22" y2="6"/></svg>
           </div>
           <h3>Podvozkové centrum</h3>
           <p>Geometrie náprav, výměna tlumičů, opravy řízení a podvozkových komponentů.</p>
@@ -1129,7 +1124,7 @@
 
         <div class="service-card fade-up d3">
           <div class="service-icon">
-            <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M4 5h16v14H4z"/><path d="M4 5l3-2h10l3 2"/><path d="M4 10h16"/><path d="M9 5L7 10M15 5l2 5"/></svg>
           </div>
           <h3>Výměna čelního skla</h3>
           <p>Profesionální výměna popraskané nebo poškozené čelní tabule, případně jiných skel vozidla.</p>
@@ -1168,7 +1163,7 @@
         <div class="pillar-feature fade-up d1">
           <div class="pillar-num">02</div>
           <div class="pillar-icon-wrap">
-            <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.5-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.3 1L3 10.9"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M3 17H5"/></svg>
           </div>
           <div class="pillar-title">Karosárna</div>
           <p class="pillar-text">Specializované pracoviště pro opravy po nehodách. Rovnání karoserie, korekce tvarů, opravy koroze.</p>
@@ -1184,7 +1179,7 @@
         <div class="pillar-feature fade-up d2">
           <div class="pillar-num">03</div>
           <div class="pillar-icon-wrap">
-            <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/><path d="M12 8a4 4 0 1 0 4 4 4 4 0 0 0-4-4z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25z"/><path d="M20.71 7.04a1 1 0 0 0 0-1.41l-2.34-2.34a1 1 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
           </div>
           <div class="pillar-title">Lakovna</div>
           <p class="pillar-text">Moderní lakovací box s přesnou míchárnou barev Spies Hecker. Vždy přesný odstín, perfektní výsledek.</p>
@@ -1257,7 +1252,7 @@
           </div>
           <div class="ins-card fade-up d3">
             <div class="ins-card-icon">
-              <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
             </div>
             <h4>Bez starostí</h4>
             <p>Veškerou komunikaci s pojišťovnou vedeme za vás. Vy jen předáte auto a vyzvednete hotové.</p>
@@ -1279,14 +1274,14 @@
       <div class="why-grid">
         <div class="why-item fade-up">
           <div class="why-icon">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
           </div>
           <h3>25 let zkušeností</h3>
           <p>Fungujeme od roku 2000. Stovky spokojených zákazníků, tisíce opravených vozidel — z regionu i okolí.</p>
         </div>
         <div class="why-item fade-up d1">
           <div class="why-icon">
-            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25z"/><path d="M20.71 7.04a1 1 0 0 0 0-1.41l-2.34-2.34a1 1 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
           </div>
           <h3>Spies Hecker lakovna</h3>
           <p>Prémiová lakovna s materiály Spies Hecker. Míchárna barev zaručuje přesný odstín každého vozidla.</p>
@@ -1300,7 +1295,7 @@
         </div>
         <div class="why-item fade-up d3">
           <div class="why-icon">
-            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
           </div>
           <h3>Smluvní servis pojišťoven</h3>
           <p>Jsme smluvním partnerem pojišťoven. Opravy po nehodách koordinujeme přímo s pojistitelem.</p>
