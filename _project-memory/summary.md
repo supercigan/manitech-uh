@@ -12,6 +12,7 @@
 - [x] Obsah webu získán z manitech-uh.cz (služby, kontakty, tým, hodiny)
 - [x] Navržena unikátní vizuální identita: Antracit + Sky Blue, Rajdhani + DM Sans
 - [x] Vytvořen kompletní index.html s 9 sekcemi
+- [x] GitHub push → https://github.com/supercigan/manitech-uh
 
 ## Co se řeší
 
@@ -56,6 +57,7 @@ radial glow (Autoslužby).
 
 ## Příští kroky
 
-- [ ] GitHub push (repo: manitech-uh nebo manitech-uherske-hradiste)
+- [x] GitHub push — repo: supercigan/manitech-uh
+- [ ] Napojit Vercel na GitHub repo
 - [ ] Doplnit Formspree ID do formuláře
 - [ ] Vytvořit DNA soubor po finalizaci
